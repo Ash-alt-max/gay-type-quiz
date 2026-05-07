@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#f2f8ee"/><stop offset="100%" stop-color="#c8d8b8"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#f0d8b8"/><stop offset="100%" stop-color="#c8a070"/>
+    </linearGradient>
+    <linearGradient id="outfit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5a7a4e"/><stop offset="100%" stop-color="#253520"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#383828"/><stop offset="100%" stop-color="#101008"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="240" height="300" rx="20" fill="url(#bg)"/>
+  <circle cx="28" cy="62" r="42" fill="#d8e8c8" opacity="0.45"/>
+  <circle cx="200" cy="250" r="50" fill="#c0d4a8" opacity="0.3"/>
+
+  <!-- Subtle texture marks -->
+  <path d="M192 68 L195 62 L198 68 L195 72Z" fill="#6b8c5e" opacity="0.5"/>
+  <path d="M20 188 L23 184 L26 188 L23 192Z" fill="#7a9a6a" opacity="0.4"/>
+  <circle cx="210" cy="145" r="3" fill="#88a878" opacity="0.4"/>
+
+  <!-- Body - simple clean outfit (crew neck / military casual) -->
+  <path d="M10 300 Q26 250 68 228 Q94 216 120 215 Q146 216 172 228 Q214 250 230 300Z" fill="url(#outfit)"/>
+  <!-- Crew neck -->
+  <path d="M104 215 Q120 207 136 215 L132 228 Q120 224 108 228Z" fill="#4a6a3e"/>
+  <!-- Jacket chest pocket -->
+  <rect x="72" y="242" width="24" height="18" rx="3" fill="#4a6840" opacity="0.7"/>
+  <path d="M72 242 L96 242" stroke="#6a8a5a" stroke-width="1.5" opacity="0.5"/>
+  <!-- Simple zip line -->
+  <path d="M118 218 L118 300" stroke="#6a8a5a" stroke-width="2.5" opacity="0.3"/>
+  <!-- Zip pull -->
+  <rect x="115" y="225" width="10" height="6" rx="2" fill="#5a7a4e"/>
+  <circle cx="120" cy="228" r="2" fill="#a8c898" opacity="0.7"/>
+  <!-- Cuff hint -->
+  <rect x="28" y="288" width="32" height="8" rx="4" fill="#4a6a3e" opacity="0.8"/>
+  <rect x="180" y="288" width="32" height="8" rx="4" fill="#4a6a3e" opacity="0.8"/>
+
+  <!-- Neck - sturdy -->
+  <path d="M105 168 Q120 163 135 168 L136 217 Q120 220 104 217Z" fill="url(#skin)"/>
+
+  <!-- Hair - undercut/clean fade -->
+  <!-- Fade sides: just a band of hair -->
+  <path d="M64 106 Q68 76 96 58 Q108 50 120 49 Q132 50 144 58 Q172 76 176 106 Q165 80 148 65 Q134 54 120 52 Q106 54 92 65 Q75 80 64 106Z" fill="url(#hair)"/>
+  <!-- Short flat top -->
+  <rect x="66" y="56" width="108" height="48" rx="6" fill="#1a1a10"/>
+  <!-- Clean edges - hard part line -->
+  <line x1="88" y1="56" x2="88" y2="88" stroke="#0a0a08" stroke-width="3"/>
+  <!-- Top texture -->
+  <path d="M95 58 Q108 54 120 55 Q132 54 145 58" stroke="#404030" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M90 62 Q108 58 130 62" stroke="#303020" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Face - clean, minimal expression -->
+  <path d="M64 106 Q64 73 91 54 Q106 45 120 44 Q134 45 149 54 Q176 73 176 106 Q179 143 170 164 Q156 186 120 188 Q84 186 70 164 Q61 143 64 106Z" fill="url(#skin)"/>
+
+  <!-- Ear -->
+  <ellipse cx="64" cy="116" rx="10" ry="13" fill="#c8a070"/>
+  <ellipse cx="176" cy="116" rx="10" ry="13" fill="#c8a070"/>
+
+  <!-- Light stubble/clean shave shadow -->
+  <path d="M80 148 Q92 158 96 168 Q106 183 120 186 Q134 183 144 168 Q148 158 160 148 Q148 145 134 144 Q120 142 106 144 Q92 145 80 148Z" fill="#383818" opacity="0.15"/>
+
+  <!-- Left Eye - calm, reserved (slight squint) -->
+  <path d="M75 100 Q92 93 111 100 Q111 113 92 117 Q73 113 75 100Z" fill="white"/>
+  <clipPath id="el"><path d="M75 100 Q92 93 111 100 Q111 113 92 117 Q73 113 75 100Z"/></clipPath>
+  <ellipse cx="92" cy="107" rx="10.5" ry="10" fill="#4a6840" clip-path="url(#el)"/>
+  <ellipse cx="92" cy="108" rx="7" ry="6.5" fill="#101808" clip-path="url(#el)"/>
+  <ellipse cx="95.5" cy="104" rx="3.5" ry="2.8" fill="white" clip-path="url(#el)"/>
+  <ellipse cx="88" cy="113" rx="1.8" ry="1.2" fill="white" opacity="0.4" clip-path="url(#el)"/>
+  <!-- Steady, level brow lines on eyes -->
+  <path d="M76 100 Q92 93 110 100" stroke="#101008" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M76 115 Q92 119 110 115" stroke="#283018" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+  <!-- Right Eye -->
+  <path d="M129 100 Q148 93 167 100 Q167 113 148 117 Q129 113 129 100Z" fill="white"/>
+  <clipPath id="er"><path d="M129 100 Q148 93 167 100 Q167 113 148 117 Q129 113 129 100Z"/></clipPath>
+  <ellipse cx="148" cy="107" rx="10.5" ry="10" fill="#4a6840" clip-path="url(#er)"/>
+  <ellipse cx="148" cy="108" rx="7" ry="6.5" fill="#101808" clip-path="url(#er)"/>
+  <ellipse cx="151.5" cy="104" rx="3.5" ry="2.8" fill="white" clip-path="url(#er)"/>
+  <ellipse cx="144" cy="113" rx="1.8" ry="1.2" fill="white" opacity="0.4" clip-path="url(#er)"/>
+  <path d="M130 100 Q148 93 166 100" stroke="#101008" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M130 115 Q148 119 166 115" stroke="#283018" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+  <!-- Eyebrows - flat, level, strong -->
+  <path d="M75 86 Q92 81 111 87" stroke="#181808" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+  <path d="M129 87 Q148 81 165 86" stroke="#181808" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+  <!-- Flat highlight -->
+  <path d="M77 85 Q92 80 109 86" stroke="#686850" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Nose - straight, direct -->
+  <path d="M115 127 Q120 135 125 127" stroke="#a87848" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M110 130 Q115 135 120 132" stroke="#986838" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M130 130 Q125 135 120 132" stroke="#986838" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Mouth - neutral, closed, not smiling but not frowning -->
+  <path d="M100 150 Q120 156 140 150" stroke="#906040" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M104 152 Q120 157 136 152" stroke="#a87858" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <!-- Slight line at corner of mouth -->
+  <path d="M100 150 Q97 153 98 157" stroke="#906040" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Cheeks - minimal -->
+  <ellipse cx="74" cy="128" rx="14" ry="8" fill="#c88848" opacity="0.1"/>
+  <ellipse cx="166" cy="128" rx="14" ry="8" fill="#c88848" opacity="0.1"/>
+
+  <!-- Jawline definition -->
+  <path d="M70 158 Q80 178 100 186" stroke="#b08848" stroke-width="1" fill="none" opacity="0.25"/>
+  <path d="M170 158 Q160 178 140 186" stroke="#b08848" stroke-width="1" fill="none" opacity="0.25"/>
+</svg>

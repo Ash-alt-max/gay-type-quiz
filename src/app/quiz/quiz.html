@@ -1,0 +1,139 @@
+<div class="quiz-wrapper">
+  <!-- Floating orbs background -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="star-field">
+    @for (_ of starPositions; track $index) {
+      <div class="star" [style]="starStyles[$index]"></div>
+    }
+  </div>
+
+  <!-- Header -->
+  <header class="quiz-header">
+    <div class="hat-icon">�️‍🌈</div>
+    <h1 class="quiz-title">Gay Type Quiz</h1>
+    <p class="quiz-subtitle">
+      ตอบคำถาม 8 ข้อ แล้วดูว่า<br />
+      <span class="title-highlight">คุณเป็นเกย์ประเภทไหน?</span>
+    </p>
+  </header>
+
+  <!-- Quiz Section -->
+  @if (!isFinished()) {
+    <div class="quiz-card" [class.animating]="animating()">
+      <!-- Progress -->
+      <div class="progress-section">
+        <div class="progress-labels">
+          <span class="progress-text">ข้อที่ {{ currentQuestionIndex() + 1 }}</span>
+          <span class="progress-total">/ {{ questions.length }}</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" [style.width.%]="progress()"></div>
+          <div
+            class="progress-head"
+            [style.left]="'calc(' + progress() + '% - 6px)'"
+          ></div>
+        </div>
+        <div class="progress-dots">
+          @for (q of questions; track q.id) {
+            <div
+              class="dot"
+              [class.done]="$index < currentQuestionIndex()"
+              [class.active]="$index === currentQuestionIndex()"
+            ></div>
+          }
+        </div>
+      </div>
+
+      <!-- Question -->
+      <div class="question-section">
+        <div class="question-badge">คำถามที่ {{ currentQuestionIndex() + 1 }}</div>
+        <h2 class="question-text">{{ currentQuestion().question }}</h2>
+      </div>
+
+      <!-- Answers -->
+      <div class="answers-grid">
+        @for (answer of currentQuestion().answers; track $index) {
+          <button
+            class="answer-btn"
+            [class.selected]="selectedAnswer() === $index"
+            (click)="selectAnswer($index)"
+          >
+            <span class="answer-icon">{{ answerIcons[$index] }}</span>
+            <span class="answer-text">{{ answer.text }}</span>
+          </button>
+        }
+      </div>
+
+      <!-- Next Button -->
+      <div class="action-section">
+        <button
+          class="next-btn"
+          [class.ready]="selectedAnswer() !== null"
+          [disabled]="selectedAnswer() === null"
+          (click)="nextQuestion()"
+        >
+          @if (!isLastQuestion()) {
+            <span>ถัดไป</span>
+            <span class="btn-arrow">→</span>
+          } @else {
+            <span>✨ ดูผลลัพธ์ ✨</span>
+          }
+        </button>
+        @if (selectedAnswer() === null) {
+          <p class="hint-text">เลือกคำตอบเพื่อดำเนินต่อ</p>
+        }
+      </div>
+    </div>
+  }
+
+  <!-- Result Section -->
+  @if (isFinished() && result(); as char) {
+    <div
+      class="result-card"
+      [style.--char-color]="char.color"
+      [style.--char-accent]="char.accentColor"
+    >
+      <div class="result-glow"></div>
+      <div class="result-sparkles">
+        <span>✦</span><span>✧</span><span>✦</span><span>✧</span><span>✦</span>
+      </div>
+      <!-- Character portrait -->
+      <div class="result-portrait-wrapper">
+        <div class="result-portrait-ring"></div>
+        <img
+          class="result-portrait"
+          [src]="char.image"
+          [alt]="char.nameTh"
+        />
+      </div>
+      <div class="result-label">คุณคือ...</div>
+      <h2 class="result-name-th">{{ char.nameTh }}</h2>
+      <div class="result-name-en">{{ char.name }}</div>
+      <div class="result-divider">
+        <span>✦</span>
+        <span class="divider-line"></span>
+        <span>✦</span>
+      </div>
+      <div class="result-role">{{ char.role }}</div>
+      <p class="result-description">{{ char.description }}</p>
+      <div class="result-funfact">
+        <span class="funfact-icon">💡</span>
+        <span>{{ char.funFact }}</span>
+      </div>
+      <div class="result-traits">
+        @for (trait of char.traits; track trait) {
+          <span class="trait-tag">{{ trait }}</span>
+        }
+      </div>
+      <button class="restart-btn" (click)="restart()">
+        🔄 ทดสอบอีกครั้ง
+      </button>
+    </div>
+  }
+
+  <footer class="quiz-footer">
+    <p>🏳️‍🌈 for fun only · ไม่มีผิดไม่มีถูก ทุก type ก็เท่ทั้งนั้น</p>
+  </footer>
+</div>

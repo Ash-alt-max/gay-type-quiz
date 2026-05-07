@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#f0f4ff"/><stop offset="100%" stop-color="#c8d8f8"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#f5e8d8"/><stop offset="100%" stop-color="#d8b890"/>
+    </linearGradient>
+    <linearGradient id="outfit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a6ab8"/><stop offset="100%" stop-color="#1a2e6a"/>
+    </linearGradient>
+    <linearGradient id="tie" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a4090"/><stop offset="100%" stop-color="#0a2050"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5a5a70"/><stop offset="100%" stop-color="#1a1a28"/>
+    </linearGradient>
+    <filter id="softglow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="240" height="300" rx="20" fill="url(#bg)"/>
+  <circle cx="25" cy="55" r="42" fill="#d8e8f8" opacity="0.5"/>
+  <circle cx="200" cy="235" r="50" fill="#c0d0f0" opacity="0.3"/>
+
+  <!-- Body - suit jacket -->
+  <path d="M12 300 Q28 250 70 228 Q95 218 120 216 Q145 218 170 228 Q212 250 228 300Z" fill="url(#outfit)"/>
+  <!-- Suit lapels -->
+  <path d="M100 216 L96 232 L86 248 L80 265 L100 260 L108 240 L112 230Z" fill="#2858a8"/>
+  <path d="M140 216 L144 232 L154 248 L160 265 L140 260 L132 240 L128 230Z" fill="#2858a8"/>
+  <!-- Lapel edge lines -->
+  <path d="M96 232 L86 248" stroke="#4878c8" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M144 232 L154 248" stroke="#4878c8" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <!-- Pocket square -->
+  <rect x="84" y="252" width="16" height="10" rx="2" fill="#8898f8" opacity="0.7"/>
+  <path d="M84 252 Q92 248 100 252" fill="white" opacity="0.6"/>
+  <!-- Tie -->
+  <path d="M114 218 L120 220 L126 218 L124 238 L120 258 L116 238Z" fill="url(#tie)"/>
+  <path d="M116 220 L120 222 L124 220 L122 225 L120 226 L118 225Z" fill="#0a2060"/>
+  <!-- Shirt -->
+  <path d="M112 216 Q120 210 128 216 L126 230 Q120 226 114 230Z" fill="white"/>
+  <!-- Shirt buttons -->
+  <circle cx="120" cy="222" r="2" fill="#9ab8f0" opacity="0.7"/>
+  <circle cx="120" cy="230" r="2" fill="#9ab8f0" opacity="0.7"/>
+
+  <!-- Neck - confident posture -->
+  <path d="M104 165 Q120 161 136 165 L138 218 Q120 222 102 218Z" fill="url(#skin)"/>
+  <!-- Shirt collar points -->
+  <path d="M104 175 L96 218 L108 212 L112 196Z" fill="white" opacity="0.8"/>
+  <path d="M136 175 L144 218 L132 212 L128 196Z" fill="white" opacity="0.8"/>
+
+  <!-- Hair - silver/distinguished -->
+  <path d="M64 108 Q68 70 95 52 Q107 44 120 43 Q133 44 145 52 Q172 70 176 108 Q165 80 148 65 Q134 55 120 53 Q106 55 92 65 Q75 80 64 108Z" fill="url(#hair)"/>
+  <!-- Silver temples -->
+  <path d="M64 108 Q66 90 68 80" stroke="#c8c8d8" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M176 108 Q174 90 172 80" stroke="#c8c8d8" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- Hair highlight silver -->
+  <path d="M88 52 Q110 44 135 50" stroke="#d0d0e0" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <path d="M80 58 Q90 52 102 54" stroke="#e8e8f0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Face - stronger, mature features -->
+  <path d="M64 108 Q64 74 90 55 Q105 46 120 45 Q135 46 150 55 Q176 74 176 108 Q179 146 170 166 Q156 188 120 190 Q84 188 70 166 Q61 146 64 108Z" fill="url(#skin)"/>
+
+  <!-- Age lines - subtle sophistication -->
+  <path d="M72 120 Q69 126 70 133" stroke="#c09868" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M168 120 Q171 126 170 133" stroke="#c09868" stroke-width="1" fill="none" opacity="0.4"/>
+  <!-- Forehead line -->
+  <path d="M90 78 Q106 74 120 75 Q134 74 150 78" stroke="#c09868" stroke-width="0.8" fill="none" opacity="0.2"/>
+
+  <!-- Ear -->
+  <ellipse cx="64" cy="120" rx="10" ry="13" fill="#d8b888"/>
+  <ellipse cx="176" cy="120" rx="10" ry="13" fill="#d8b888"/>
+
+  <!-- Left Eye - confident, steady gaze -->
+  <path d="M73 102 Q92 95 111 102 Q110 117 92 120 Q74 117 73 102Z" fill="white"/>
+  <clipPath id="el"><path d="M73 102 Q92 95 111 102 Q110 117 92 120 Q74 117 73 102Z"/></clipPath>
+  <ellipse cx="92" cy="109" rx="11.5" ry="10" fill="#3a6098" clip-path="url(#el)"/>
+  <ellipse cx="92" cy="109" rx="7" ry="6.5" fill="#101828" clip-path="url(#el)"/>
+  <ellipse cx="96" cy="104" rx="3.5" ry="3" fill="white" clip-path="url(#el)"/>
+  <ellipse cx="87" cy="115" rx="1.8" ry="1.2" fill="white" opacity="0.4" clip-path="url(#el)"/>
+  <path d="M74 102 Q92 95 110 102" stroke="#101828" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M74 117 Q92 121 110 117" stroke="#303048" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Right Eye -->
+  <path d="M129 102 Q148 95 167 102 Q166 117 148 120 Q130 117 129 102Z" fill="white"/>
+  <clipPath id="er"><path d="M129 102 Q148 95 167 102 Q166 117 148 120 Q130 117 129 102Z"/></clipPath>
+  <ellipse cx="148" cy="109" rx="11.5" ry="10" fill="#3a6098" clip-path="url(#er)"/>
+  <ellipse cx="148" cy="109" rx="7" ry="6.5" fill="#101828" clip-path="url(#er)"/>
+  <ellipse cx="152" cy="104" rx="3.5" ry="3" fill="white" clip-path="url(#er)"/>
+  <ellipse cx="143" cy="115" rx="1.8" ry="1.2" fill="white" opacity="0.4" clip-path="url(#er)"/>
+  <path d="M130 102 Q148 95 166 102" stroke="#101828" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M130 117 Q148 121 166 117" stroke="#303048" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Eyebrows - defined, trimmed -->
+  <path d="M74 88 Q92 82 110 88" stroke="#2a2a3a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M130 88 Q148 82 166 88" stroke="#2a2a3a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- Silver brow highlight -->
+  <path d="M76 87 Q92 82 108 87" stroke="#a0a0b8" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.45"/>
+
+  <!-- Nose - defined -->
+  <path d="M114 128 Q120 136 126 128" stroke="#b89068" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M110 130 Q115 135 119 132" stroke="#a07848" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M130 130 Q125 135 121 132" stroke="#a07848" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Mouth - slight confident smile -->
+  <path d="M98 150 Q120 161 142 150" stroke="#a07850" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M102 153 Q120 163 138 153 L135 159 Q120 165 105 159Z" fill="#c89060" opacity="0.3"/>
+  <!-- Subtle smirk indent -->
+  <path d="M140 150 Q145 148 143 153" stroke="#a07850" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Cheek definition -->
+  <path d="M68 135 Q72 148 75 160" stroke="#c09068" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M172 135 Q168 148 165 160" stroke="#c09068" stroke-width="1" fill="none" opacity="0.4"/>
+
+  <!-- Watch glimpse on wrist area -->
+  <rect x="92" y="292" width="22" height="8" rx="3" fill="#3a5898" opacity="0.8"/>
+  <rect x="96" y="288" width="14" height="12" rx="2" fill="#8898c8"/>
+  <path d="M99 291 Q106 288 113 291" stroke="#e0e8f8" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>

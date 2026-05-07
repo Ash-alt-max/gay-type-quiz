@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#fff8f0"/><stop offset="100%" stop-color="#f0d8b0"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#f0c898"/><stop offset="100%" stop-color="#d89860"/>
+    </linearGradient>
+    <linearGradient id="beard" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#8b5a28"/><stop offset="100%" stop-color="#5a3210"/>
+    </linearGradient>
+    <linearGradient id="outfit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4883a"/><stop offset="100%" stop-color="#7a4810"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7a4820"/><stop offset="100%" stop-color="#3a1800"/>
+    </linearGradient>
+    <filter id="softglow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="240" height="300" rx="20" fill="url(#bg)"/>
+  <circle cx="30" cy="60" r="45" fill="#f8e8c8" opacity="0.45"/>
+  <circle cx="195" cy="240" r="55" fill="#e8c898" opacity="0.3"/>
+
+  <!-- Body / outfit - flannel shirt -->
+  <path d="M15 300 Q30 248 75 228 Q100 218 120 216 Q140 218 165 228 Q210 248 225 300Z" fill="url(#outfit)"/>
+  <!-- Shirt plaid pattern -->
+  <path d="M50 255 L50 300" stroke="#c06828" stroke-width="3" opacity="0.4"/>
+  <path d="M80 244 L75 300" stroke="#c06828" stroke-width="3" opacity="0.4"/>
+  <path d="M110 238 L108 300" stroke="#c06828" stroke-width="3" opacity="0.4"/>
+  <path d="M140 238 L142 300" stroke="#c06828" stroke-width="3" opacity="0.4"/>
+  <path d="M170 244 L175 300" stroke="#c06828" stroke-width="3" opacity="0.4"/>
+  <path d="M20 278 L220 278" stroke="#b85820" stroke-width="2.5" opacity="0.35"/>
+  <path d="M15 263 L225 263" stroke="#b85820" stroke-width="2.5" opacity="0.3"/>
+  <!-- Shirt buttons -->
+  <rect x="114" y="222" width="12" height="46" rx="3" fill="#a04010" opacity="0.5"/>
+  <circle cx="120" cy="230" r="3" fill="#f0c080"/>
+  <circle cx="120" cy="242" r="3" fill="#f0c080"/>
+  <circle cx="120" cy="254" r="3" fill="#f0c080"/>
+  <!-- Shirt collar -->
+  <path d="M105 216 Q120 208 135 216 L128 230 Q120 225 112 230Z" fill="#c86030"/>
+
+  <!-- Neck (thick) -->
+  <path d="M100 168 Q120 163 140 168 L142 218 Q120 222 98 218Z" fill="url(#skin)"/>
+  <!-- Neck hair shadow -->
+  <path d="M100 175 Q120 172 140 175 Q138 168 120 165 Q102 168 100 175Z" fill="#8b5a28" opacity="0.3"/>
+
+  <!-- Shoulders wide -->
+  <ellipse cx="70" cy="222" rx="28" ry="14" fill="#c86030"/>
+  <ellipse cx="170" cy="222" rx="28" ry="14" fill="#c86030"/>
+
+  <!-- Hair - short, thick -->
+  <path d="M64 100 Q68 62 94 45 Q106 38 120 37 Q134 38 146 45 Q172 62 176 100 Q165 72 148 58 Q134 48 120 46 Q106 48 92 58 Q75 72 64 100Z" fill="url(#hair)"/>
+  <ellipse cx="120" cy="96" rx="57" ry="52" fill="#3a1800" opacity="0.15"/>
+  <!-- Crown hair short cut -->
+  <rect x="64" y="58" width="112" height="42" rx="8" fill="url(#hair)" opacity="0.9"/>
+  <!-- Hair texture lines -->
+  <path d="M78 60 Q90 54 103 56" stroke="#a06030" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M110 50 Q120 46 130 50" stroke="#a06030" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Face - broader, stronger jaw -->
+  <path d="M63 108 Q63 74 88 55 Q103 45 120 44 Q137 45 152 55 Q177 74 177 108 Q180 148 172 167 Q158 190 120 193 Q82 190 68 167 Q60 148 63 108Z" fill="url(#skin)"/>
+
+  <!-- Ear (bigger) -->
+  <ellipse cx="63" cy="120" rx="11" ry="14" fill="#d8a870"/>
+  <ellipse cx="177" cy="120" rx="11" ry="14" fill="#d8a870"/>
+
+  <!-- Beard / Stubble - full beard -->
+  <path d="M75 148 Q80 155 85 160 Q90 170 95 178 Q105 192 120 195 Q135 192 145 178 Q150 170 155 160 Q160 155 165 148 Q160 145 155 143 Q140 140 120 140 Q100 140 85 143 Q80 145 75 148Z" fill="url(#beard)"/>
+  <!-- Beard highlight -->
+  <path d="M90 145 Q120 143 150 145" stroke="#b07840" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <!-- Beard texture -->
+  <path d="M85 155 Q95 162 108 165" stroke="#6a3a10" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M155 155 Q145 162 132 165" stroke="#6a3a10" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M102 170 Q112 177 128 177 Q136 172 138 170" stroke="#6a3a10" stroke-width="1" fill="none" opacity="0.4"/>
+
+  <!-- Mustache -->
+  <path d="M96 143 Q104 138 110 139 Q116 141 120 142 Q124 141 130 139 Q136 138 144 143 Q136 147 120 145 Q104 147 96 143Z" fill="url(#beard)"/>
+
+  <!-- Left Eye - friendly squinted -->
+  <path d="M75 100 Q92 93 109 100 Q109 114 92 117 Q75 114 75 100Z" fill="white"/>
+  <clipPath id="el"><path d="M75 100 Q92 93 109 100 Q109 114 92 117 Q75 114 75 100Z"/></clipPath>
+  <ellipse cx="92" cy="108" rx="10" ry="9.5" fill="#8b5a20" clip-path="url(#el)"/>
+  <ellipse cx="92" cy="108" rx="6.5" ry="6" fill="#200800" clip-path="url(#el)"/>
+  <ellipse cx="95.5" cy="104" rx="3" ry="2.5" fill="white" clip-path="url(#el)"/>
+  <path d="M76 100 Q92 93 108 100" stroke="#2a1000" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Smile crinkle -->
+  <path d="M73 103 Q70 107 72 112" stroke="#c08850" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M111 103 Q114 107 112 112" stroke="#c08850" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Right Eye -->
+  <path d="M131 100 Q148 93 165 100 Q165 114 148 117 Q131 114 131 100Z" fill="white"/>
+  <clipPath id="er"><path d="M131 100 Q148 93 165 100 Q165 114 148 117 Q131 114 131 100Z"/></clipPath>
+  <ellipse cx="148" cy="108" rx="10" ry="9.5" fill="#8b5a20" clip-path="url(#er)"/>
+  <ellipse cx="148" cy="108" rx="6.5" ry="6" fill="#200800" clip-path="url(#er)"/>
+  <ellipse cx="151.5" cy="104" rx="3" ry="2.5" fill="white" clip-path="url(#er)"/>
+  <path d="M132 100 Q148 93 164 100" stroke="#2a1000" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M129 103 Q126 107 128 112" stroke="#c08850" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M167 103 Q170 107 168 112" stroke="#c08850" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Eyebrows - thick -->
+  <path d="M74 88 Q92 80 110 87" stroke="#3a1800" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M130 87 Q148 80 166 88" stroke="#3a1800" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <!-- Brow texture -->
+  <path d="M78 86 Q92 80 108 86" stroke="#8a5030" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Nose - wider, prominent -->
+  <path d="M112 125 Q120 133 128 125" stroke="#c08050" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M108 128 Q112 132 118 130" stroke="#b07040" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M132 128 Q128 132 122 130" stroke="#b07040" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Smile / friendly grin -->
+  <path d="M100 145 Q120 157 140 145" stroke="#9a5828" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M105 148 Q120 158 135 148 L133 156 Q120 163 107 156Z" fill="#e8a868" opacity="0.35"/>
+
+  <!-- Cheek warmth -->
+  <ellipse cx="78" cy="125" rx="16" ry="10" fill="#e87828" opacity="0.2"/>
+  <ellipse cx="162" cy="125" rx="16" ry="10" fill="#e87828" opacity="0.2"/>
+</svg>
